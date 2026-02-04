@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: '/',
+        index: true,
         element: <Home />,
       },
       {
@@ -29,7 +29,11 @@ const router = createBrowserRouter([
     path: "*",
     element: <h1>Page Not Found</h1>,
   },
-]);
+], 
+{
+  basename: '/homework-43'
+}
+);
 
 function App() {
 
